@@ -50,6 +50,13 @@ After that restart tomcat services to effect these changes
 tomcatdown
 tomcatup
 ```
+like below 
+<!--
+  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+-->
+ it is allowing localhost only and we are commenting out that
+
 Update users information in the tomcat-users.xml file
 goto tomcat home directory and Add below users to conf/tomcat-user.xml file before '</tomcat-users>'
 ```sh
