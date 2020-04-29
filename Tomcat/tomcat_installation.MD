@@ -51,7 +51,7 @@ tomcatdown
 tomcatup
 ```
 Update users information in the tomcat-users.xml file
-goto tomcat home directory and Add below users to conf/tomcat-user.xml file
+goto tomcat home directory and Add below users to conf/tomcat-user.xml file before '</tomcat-users>'
 ```sh
 	<role rolename="manager-gui"/>
 	<role rolename="manager-script"/>
@@ -63,3 +63,9 @@ goto tomcat home directory and Add below users to conf/tomcat-user.xml file
 ```
 Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
+Note: that for Tomcat 7 onwards, the roles required to use the manager application were changed from the single manager role to the following four roles. You will need to assign the role(s) required for the functionality you wish to access.
+
+manager-gui - allows access to the HTML GUI and the status pages
+manager-script - allows access to the text interface and the status pages
+manager-jmx - allows access to the JMX proxy and the status pages
+manager-status - allows access to the status pages only
