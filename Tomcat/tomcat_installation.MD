@@ -51,10 +51,12 @@ tomcatdown
 tomcatup
 ```
 like below 
+```sh
 <!--
   <Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
 -->
+```
  it is allowing localhost only and we are commenting out that
 
 Update users information in the tomcat-users.xml file
