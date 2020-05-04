@@ -38,7 +38,24 @@ Using keybased authentication is advised. If you are still at learning stage use
 ```sh 
 # sed command replaces "PasswordAuthentication no to yes" without editing file 
  sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+  
 ``` 
+
+ enable user authentication
+ 
+ ```sh 
+vi /etc/ssh/ssh_config
+uncomment passwordauthentication section
+
+vi /etc/ssh/sshd_config
+uncomment "passwordauthentication yes" section
+comment "passwordauthentication no" section
+```
+ 
+ Restart services
+  ```sh 
+ service sshd restart
+ ```
 Login as a ansadmin user on master and generate ssh key (Master)
 ```sh 
 ssh-keygen
