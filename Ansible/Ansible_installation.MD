@@ -68,6 +68,13 @@ ssh-copy-id <target-server>
 Update target servers information on /etc/ansible/hosts file (Master)
 ```sh 
 echo "<target server IP>" > /etc/ansible/hosts
+
+or
+
+create a group like below (what i followed)
+[Web_server]
+IP_ADD1
+IP_ADD2
 ```
 Run ansible command as ansadmin user it should be successful (Master)
 ```sh 
