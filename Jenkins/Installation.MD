@@ -42,6 +42,7 @@ Get latest version of jenkins from https://pkg.jenkins.io/redhat-stable/
 yum -y install wget
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+#The --import option to the rpm command imports the public key from a given vendor
 yum -y install jenkins
 ```
 
