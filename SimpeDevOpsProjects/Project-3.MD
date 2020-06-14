@@ -34,6 +34,7 @@ COPY ./webapp.war /usr/local/tomcat/webapps
 ```
 
 5. Login to Jenkins console and add Docker server to execute commands from Jenkins  
+install plugin publish over ssh
 Manage Jenkins --> Configure system -->  Publish over SSH --> add Docker server and credentials
 
 On your docker server
