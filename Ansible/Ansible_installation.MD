@@ -52,7 +52,7 @@ uncomment "passwordauthentication yes" section
 comment "passwordauthentication no" section
 ```
  
- Restart services
+ Restart services(Master & Slave)
   ```sh 
  service sshd restart
  ```
