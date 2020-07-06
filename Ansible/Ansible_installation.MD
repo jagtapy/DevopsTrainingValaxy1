@@ -40,8 +40,8 @@ Using keybased authentication is advised. If you are still at learning stage use
  sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
   
 ``` 
-
- enable user authentication
+OR
+ enable user authentication((Master & Slave))
  
  ```sh 
 vi /etc/ssh/ssh_config
